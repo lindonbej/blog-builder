@@ -57,7 +57,11 @@ export default {
         this.title = "Untitled";
       }
       if (this.post == undefined && this.id == -1) {
-        this.id = this.$root.$data.posts[0].id + 1;
+        if (this.$root.$data.posts.length == 0) {
+          this.id = 0;
+        } else {
+          this.id = this.$root.$data.posts[0].id + 1;
+        }
         let post = {
           id: this.id,
           title: this.title,
