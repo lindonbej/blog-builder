@@ -1,0 +1,7 @@
+App.vue contains header and footer
+Header contains Home, Edit, and Blog
+Blog page has a menu of posts on the left, and has the currently selected post in the middle
+The Edit page contains a list of posts and a button for adding a new post
+Clicking on content names or create buttons leads to an edit component
+
+
